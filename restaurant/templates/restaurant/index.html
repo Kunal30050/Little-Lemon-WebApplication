@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Little Lemon</title>
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family: Georgia, serif; background:#fff; color:#333; }
+        header { text-align:center; padding:20px; border-bottom:1px solid #eee; }
+        header h1 { font-size:1.8rem; letter-spacing:3px; color:#495e57; }
+        nav { background:#495e57; }
+        nav ul { list-style:none; display:flex; justify-content:center; gap:40px; padding:12px 0; }
+        nav ul li a { color:#fff; text-decoration:none; font-size:0.95rem; }
+        nav ul li a:hover { color:#f4ce14; }
+        main { max-width:900px; margin:0 auto; padding:40px 20px; min-height:60vh; }
+        footer { background:#495e57; color:#fff; text-align:center; padding:20px; margin-top:40px; }
+    </style>
+</head>
+<body>
+    <header><h1>LITTLE LEMON</h1></header>
+    <nav>
+        <ul>
+            <li><a href="/restaurant/">Home</a></li>
+            <li><a href="/api/menu/">Menu API</a></li>
+            <li><a href="/api/bookings/">Bookings API</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2 style="color:#495e57;margin-bottom:12px;">Welcome to Little Lemon</h2>
+        <p style="line-height:1.8;margin-bottom:20px;">
+            A family-owned Mediterranean restaurant focused on traditional recipes served with a modern twist.
+        </p>
+        <h3 style="margin-bottom:10px;">API Endpoints</h3>
+        <ul style="line-height:2;">
+            <li><strong>POST</strong> /api/registration/ — Register a new user</li>
+            <li><strong>POST</strong> /api/token/ — Get auth token</li>
+            <li><strong>GET/POST</strong> /api/menu/ — List or create menu items</li>
+            <li><strong>GET/PUT/DELETE</strong> /api/menu/&lt;id&gt;/ — Single menu item</li>
+            <li><strong>GET/POST</strong> /api/bookings/ — List or create bookings</li>
+            <li><strong>GET/PUT/DELETE</strong> /api/bookings/&lt;id&gt;/ — Single booking</li>
+        </ul>
+    </main>
+    <footer><p>Copyright Little Lemon</p></footer>
+</body>
+</html>
